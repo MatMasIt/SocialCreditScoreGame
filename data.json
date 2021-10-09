@@ -1,0 +1,172 @@
+{
+    "initialScore": 10000,
+    "questions": [
+        {
+            "title": "Is Taiwan a country",
+            "answers": [
+                {
+                    "text": "Yes",
+                    "effect": -1001
+                },
+                {
+                    "text": "No",
+                    "effect": 700
+                },
+                {
+                    "text": "What is Taiwan?",
+                    "effect": 3000
+                }
+            ]
+        },
+        {
+            "title": "How many parties are allowed in China?",
+            "answers": [
+                {
+                    "text": "One",
+                    "effect": 1200
+                },
+                {
+                    "text": "Many",
+                    "effect": -5000
+                },
+                {
+                    "text": "Only the Communist party",
+                    "effect": 7000
+                }
+            ]
+        },
+        {
+            "title": "How many children do you have?",
+            "answers": [
+                {
+                    "text": "One",
+                    "effect": 1200
+                },
+                {
+                    "text": "Many",
+                    "effect": -5000
+                },
+                {
+                    "text": "None",
+                    "effect": 10
+                }
+            ]
+        },
+        {
+            "title": "What happened in Tienanmen square in 1989?",
+            "answers": [
+                {
+                    "text": "Nothing",
+                    "effect": 1200
+                },
+                {
+                    "text": "Something",
+                    "effect": -5000
+                },
+                {
+                    "text": "What?",
+                    "effect": 10
+                }
+            ]
+        },
+        {
+            "title": "Do you use western socia media?",
+            "answers": [
+                {
+                    "text": "No",
+                    "effect": 1200
+                },
+                {
+                    "text": "Yes",
+                    "effect": -5000
+                }
+            ]
+        },
+        {
+            "title": "Do you keep any Uyghurs hidden at home?",
+            "answers": [
+                {
+                    "text": "No",
+                    "effect": 1200
+                },
+                {
+                    "text": "Yes",
+                    "effect": -5000
+                }
+            ]
+        },
+        {
+            "title": "Have you recently travelled abroad",
+            "answers": [
+                {
+                    "text": "No",
+                    "effect": 1200
+                },
+                {
+                    "text": "Yes",
+                    "effect": -5000
+                },
+                {
+                    "text": "To expand China's influence",
+                    "effect": 400
+                }
+            ]
+        },
+        {
+            "title": "Do you think we should respect the environment",
+            "answers": [
+                {
+                    "text": "No",
+                    "effect": 1200
+                },
+                {
+                    "text": "Yes",
+                    "effect": -5000
+                },
+                {
+                    "text": "Just casually expanding China's influence again",
+                    "effect": 600
+                }
+            ]
+        },
+        {
+            "title": "Do you support Hong-Kong's indipendence?",
+            "answers": [
+                {
+                    "text": "No",
+                    "effect": 1200
+                },
+                {
+                    "text": "Yes",
+                    "effect": -5000
+                }
+            ]
+        },
+        {
+            "title": "Can we build a nuclear power plant near your home?",
+            "answers": [
+                {
+                    "text": "No",
+                    "effect": -7200
+                },
+                {
+                    "text": "Yes",
+                    "effect": 5000
+                }
+            ]
+        },
+        {
+            "title": "Your father is going to a re-education camp",
+            "answers": [
+                {
+                    "text": "No!",
+                    "effect": -7200
+                },
+                {
+                    "text": "Yes!",
+                    "effect": 5000
+                }
+            ]
+        }
+    ]
+}

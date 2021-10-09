@@ -1,0 +1,92 @@
+body {
+    background-image: url(..//assets/img/chinese_flag.png);
+}
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.button {
+    color: inherit;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 20vh;
+    margin-bottom: 1vh;
+    display: inline-block;
+    height: 10vh;
+    width: 30vh;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#question {
+    text-align: center;
+}
+
+#questionTitle {
+    margin-top: 5vh;
+}
+
+.floattop {
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+#playBegin {
+    background-image: url(..//assets/img/chinese_flag.png);
+}
+
+.floattop>img {
+    width: 35vw;
+    margin-top: 10vh;
+}
+
+#counter {
+    font-size: 25px;
+}
+
+#wrong {
+    background-color: black;
+    display: none;
+}
+
+#correct {
+    background-color: black;
+    display: none;
+}
+
+#mao {
+    background-color: black;
+    display: none;
+    z-index: 4;
+}
+
+#xi {
+    background-color: black;
+    display: none;
+    z-index: 3;
+}
+
+#square {
+    background-color: black;
+    display: none;
+    z-index: 2;
+}
+
+#mao>img, #xi>img, #square>img {
+    width: 30vw;
+    margin-top: 10vh;
+}
+
+#loose {
+    background-color: black;
+    display: none;
+    z-index: 10;
+}
