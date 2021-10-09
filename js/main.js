@@ -22,7 +22,9 @@ function sef(filename) {
     new Audio("assets/music/" + filename + ".mp3").play();
 }
 $("#playBegin").click(function () {
-    document.getElementsByTagName("html")[0].requestFullscreen();
+    try {
+        document.getElementsByTagName("html")[0].requestFullscreen();
+    } catch(e){}
     audiosegm();
     $(this).fadeOut();
 });
