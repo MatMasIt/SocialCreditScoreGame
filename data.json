@@ -64,8 +64,8 @@
                     "effect": -5000
                 },
                 {
-                    "text": "What?",
-                    "effect": 10
+                    "text": "What is Tienanmen square?",
+                    "effect": 1000
                 }
             ]
         },
@@ -108,7 +108,7 @@
                 },
                 {
                     "text": "To expand China's influence",
-                    "effect": 400
+                    "effect": 1400
                 }
             ]
         },
@@ -165,6 +165,90 @@
                 {
                     "text": "Yes!",
                     "effect": 5000
+                }
+            ]
+        },
+        {
+            "title": "Whitch country is the best?",
+            "answers": [
+                {
+                    "text": "America",
+                    "effect": -1000
+                },
+                {
+                    "text": "Not China",
+                    "effect": -6969
+                },
+                {
+                    "text": "China",
+                    "effect": 3000
+                },
+                {
+                    "text": "Taiwan",
+                    "effect": -5000
+                }
+            ]
+        },
+        {
+            "title": "How many hours of videogames do you play per day?",
+            "answers": [
+                {
+                    "text": "1",
+                    "effect": 1000
+                },
+                {
+                    "text": "What is gaming?",
+                    "effect": 609
+                },
+                {
+                    "text": "3",
+                    "effect": 500
+                },
+                {
+                    "text": "more than 3 hours",
+                    "effect": -1000
+                }
+            ]
+        },
+        {
+            "title": "Thoughts about communism?",
+            "answers": [
+                {
+                    "text": "I hate it",
+                    "effect": -2000
+                },
+                {
+                    "text": "I love it",
+                    "effect": -609
+                },
+                {
+                    "text": "We love it",
+                    "effect": 1500
+                },
+                {
+                    "text": "What is communism?",
+                    "effect": -10
+                }
+            ]
+        },
+        {
+            "title": "Whitch country is the best?",
+            "answers": [
+                {
+                    "text": "China",
+                    "effect": 1000
+                },
+                {
+                    "text": "China",
+                    "effect": 1000
+                },
+                {
+                    "text": "China",
+                    "effect": 1000
+                },
+                {
+                    "text": "Not China",
+                    "effect": -5000
                 }
             ]
         }
