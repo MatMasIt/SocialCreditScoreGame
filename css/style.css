@@ -53,6 +53,15 @@ body {
     font-size: 25px;
 }
 
+.floatleft {
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    width: 20%;
+
+    display: none;
+}
+
 #wrong {
     background-color: black;
     display: none;
