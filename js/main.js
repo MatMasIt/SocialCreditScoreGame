@@ -49,6 +49,18 @@ function displayQuestion() {
     }
     else {
         var index = 0;
+
+        // sends comrad Dwayne to help (or calls him back)
+        if (total > 4000 ) {
+            $("#rock-approves").hide();
+            $("#rock-disapproves").hide();            
+        }
+        else{
+            $("#rock-approves-video").get(0).currentTime = 0;
+            $("#rock-approves").show();
+        } 
+        // **************************************
+
         if (indexesProgress < indexeslist.length) {
             index = indexeslist[indexesProgress];
             indexesProgress++;
@@ -68,6 +80,31 @@ function displayQuestion() {
         $("#questionTitle").html(data["questions"][index]["title"]);
     }
 }
+
+// comrad Dwaynes feedback *************************
+$(".ans").mouseenter(function(){
+    var res = cQuestion["answers"][$(this).attr("data-ans") - 1]["effect"];
+
+    if ( ( total <= 4000 ) && ( res < 0 ) ) {
+        $("#rock-approves").hide();
+        $("#rock-disapproves").show();
+        $("#rock-disapproves-video").get(0).currentTime = 0;
+        $("#rock-disapproves-video").get(0).play();
+    }
+
+});
+$(".ans").mouseleave(function(){
+    var res = cQuestion["answers"][$(this).attr("data-ans") - 1]["effect"];
+
+    if ( ( total <= 4000 ) && ( res < 0 ) ) {
+        $("#rock-disapproves").hide();
+        $("#rock-approves").show();
+        $("#rock-approves-video").get(0).currentTime = 0;
+        $("#rock-approves-video").get(0).play();
+    }
+});
+// ***8888888************************************8
+
 $(".ans").click(function () {
     var res = cQuestion["answers"][$(this).attr("data-ans") - 1]["effect"];
     total += res;
