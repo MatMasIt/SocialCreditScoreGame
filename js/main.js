@@ -29,7 +29,7 @@ $("#playBegin").click(function () {
     $(this).fadeOut();
 });
 var data = {}, cQuestion = {}, indexeslist = [], indexesProgress = 0, total = 100;
-$.getJSON("https://matmasit.github.io/SocialCreditScoreGame/data.json", function (d) {
+$.getJSON("data.json", function (d) {
     data = d;
     total = d["initialScore"];
     $("#counter").html("Social credit score: " + total);
