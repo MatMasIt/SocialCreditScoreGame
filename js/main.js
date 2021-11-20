@@ -51,7 +51,7 @@ function displayQuestion() {
         var index = 0;
 
         // sends comrad Dwayne to help (or calls him back)
-        if (total > 4000 ) {
+        if (total > 4000 ) { // comes when low score
             $("#rock-approves").hide();
             $("#rock-disapproves").hide();            
         }
@@ -60,6 +60,12 @@ function displayQuestion() {
             $("#rock-approves").show();
         } 
         // **************************************
+        // sends comrad baby cha-cha to help (or calls him back)
+        if ( indexesProgress != 0 ) // comes when first question
+            $("#bbchacha").hide(); 
+        else
+            $("#bbchacha").show();
+        // **************************************        
 
         if (indexesProgress < indexeslist.length) {
             index = indexeslist[indexesProgress];
