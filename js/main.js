@@ -1,11 +1,13 @@
 var audio, audiostate;
 var d = Math.random();
+// choose random bgm to start
 if (d < 0.50) {
     audiostate = "mix";
 }
 else {
     audiostate = "maobgm";
 }
+//handles bgm files to create a continous bgm
 function audiosegm() {
     if (audiostate != "mix") {
         audio = new Audio('assets/music/main.mp3');
@@ -18,13 +20,14 @@ function audiosegm() {
     audio.play();
     audio.onended = audiosegm;
 }
+// plays a sound effect
 function sef(filename) {
     new Audio("assets/music/" + filename + ".mp3").play();
 }
 $("#playBegin").click(function () {
-    try {
+    try {// this might fail, expecially on safari
         document.getElementsByTagName("html")[0].requestFullscreen();
-    } catch(e){}
+    } catch (e) { }
     audiosegm();
     $(this).fadeOut();
 });
@@ -51,18 +54,18 @@ function displayQuestion() {
         var index = 0;
 
         // sends comrad Dwayne to help (or calls him back)
-        if (total > 4000 ) { // comes when low score
+        if (total > 4000) { // comes when low score
             $("#rock-approves").hide();
-            $("#rock-disapproves").hide();            
+            $("#rock-disapproves").hide();
         }
-        else{
+        else {
             $("#rock-approves-video").get(0).currentTime = 0;
             $("#rock-approves").show();
-        } 
+        }
         // **************************************
         // sends comrad baby cha-cha to help (or calls him back)
-        if ( indexesProgress != 0 ) // comes when first question
-            $("#bbchacha").hide(); 
+        if (indexesProgress != 0) // comes when first question
+            $("#bbchacha").hide();
         else
             $("#bbchacha").show();
         // **************************************        
@@ -88,25 +91,34 @@ function displayQuestion() {
 }
 
 // comrad Dwaynes feedback *************************
-$(".ans").mouseenter(function(){
-    var res = cQuestion["answers"][$(this).attr("data-ans") - 1]["effect"];
+$(".ans").mouseenter(function () {
+    try {
+        var res = cQuestion["answers"][$(this).attr("data-ans") - 1]["effect"];
 
-    if ( ( total <= 4000 ) && ( res < 0 ) ) {
-        $("#rock-approves").hide();
-        $("#rock-disapproves").show();
-        $("#rock-disapproves-video").get(0).currentTime = 0;
-        $("#rock-disapproves-video").get(0).play();
+        if ((total <= 4000) && (res < 0)) {
+            $("#rock-approves").hide();
+            $("#rock-disapproves").show();
+            $("#rock-disapproves-video").get(0).currentTime = 0;
+            $("#rock-disapproves-video").get(0).play();
+        }
+    } catch (e) {
+        if (e instanceof TypeError) return true;
+        else throw e;
     }
-
 });
-$(".ans").mouseleave(function(){
-    var res = cQuestion["answers"][$(this).attr("data-ans") - 1]["effect"];
+$(".ans").mouseleave(function () {
+    try {
+        var res = cQuestion["answers"][$(this).attr("data-ans") - 1]["effect"];
 
-    if ( ( total <= 4000 ) && ( res < 0 ) ) {
-        $("#rock-disapproves").hide();
-        $("#rock-approves").show();
-        $("#rock-approves-video").get(0).currentTime = 0;
-        $("#rock-approves-video").get(0).play();
+        if ((total <= 4000) && (res < 0)) {
+            $("#rock-disapproves").hide();
+            $("#rock-approves").show();
+            $("#rock-approves-video").get(0).currentTime = 0;
+            $("#rock-approves-video").get(0).play();
+        }
+    } catch (e) {
+        if (e instanceof TypeError) return true;
+        else throw e;
     }
 });
 // ***8888888************************************8
@@ -150,3 +162,7 @@ $(".ans").click(function () {
     displayQuestion();
     $("#correct").fadeOut();
 });
+
+$('.fadeOutVideo').on('ended', function () {
+    $(this).parent().fadeOut();
+})
