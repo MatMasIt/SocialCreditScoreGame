@@ -2,22 +2,22 @@
     "initialScore": 10000,
     "questions": [
         {
-            "title": "Select the sexiest male:",
+            "title": "Who's the best (and sexiest) president ever:",
             "answers": [
                 {
-                    "text": "<img class='answers-pic' src='assets/img/male0.jpeg'>",
+                    "text": "<img class='answers-pic' src='assets/img/p0.jpeg'>",
                     "effect": 2000
                 },
                 {
-                    "text": "<img class='answers-pic' src='assets/img/male1.jpeg'>",
+                    "text": "<img class='answers-pic' src='assets/img/p2.jpeg'>",
                     "effect": -9999
                 },
                 {
-                    "text": "<img class='answers-pic' src='assets/img/male2.jpeg'>",
+                    "text": "<img class='answers-pic' src='assets/img/p3.jpeg'>",
                     "effect": -9999
                 },
                 {
-                    "text": "<img class='answers-pic' src='assets/img/male3.jpeg'>",
+                    "text": "<img class='answers-pic' src='assets/img/p5.jpeg'>",
                     "effect": -9999
                 }
             ]

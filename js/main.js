@@ -33,6 +33,35 @@ $("#playBegin").click(function () {
 });
 var data = {}, cQuestion = {}, indexeslist = [], indexesProgress = 0, total = 100;
 $.getJSON("data.json", function (d) {
+/*  
+    d = 
+    {
+        "initialScore": 10000,
+        "questions": [
+            {
+                "title": "Who's the best (and sexiest) president:",
+                "answers": [
+                    {
+                        "text": "<img class='answers-pic' src='assets/img/p0.jpeg'>",
+                        "effect": 2000
+                    },
+                    {
+                        "text": "<img class='answers-pic' src='assets/img/p2.jpeg'>",
+                        "effect": -9999
+                    },
+                    {
+                        "text": "<img class='answers-pic' src='assets/img/p3.jpeg'>",
+                        "effect": -9999
+                    },
+                    {
+                        "text": "<img class='answers-pic' src='assets/img/p5.jpeg'>",
+                        "effect": -9999
+                    }
+                ]
+            }        
+        ]
+    };
+*/    
     data = d;
     total = d["initialScore"];
     $("#counter").html("Social credit score: " + total);
