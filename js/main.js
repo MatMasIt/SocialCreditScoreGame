@@ -43,7 +43,6 @@ $.getJSON("data.json", function (d) {
     displayQuestion();
 });
 function displayQuestion() {
-    if(total < 200) sef("pullup");
     $("html, body").scrollTop(0);
     if (total < 1) {
         audio.pause();
@@ -52,6 +51,8 @@ function displayQuestion() {
         $("#loose").show();
     }
     else {
+        
+        if(total < 2000) sef("pullup");
         var index = 0;
 
         // sends comrad Dwayne to help (or calls him back)
