@@ -2,6 +2,27 @@
     "initialScore": 10000,
     "questions": [
         {
+            "title": "Select the sexiest male:",
+            "answers": [
+                {
+                    "text": "<img class='answers-pic' src='assets/img/male0.jpeg'>",
+                    "effect": 2000
+                },
+                {
+                    "text": "<img class='answers-pic' src='assets/img/male1.jpeg'>",
+                    "effect": -9999
+                },
+                {
+                    "text": "<img class='answers-pic' src='assets/img/male2.jpeg'>",
+                    "effect": -9999
+                },
+                {
+                    "text": "<img class='answers-pic' src='assets/img/male3.jpeg'>",
+                    "effect": -9999
+                }
+            ]
+        },        
+        {
             "title": "Is Taiwan a country",
             "answers": [
                 {

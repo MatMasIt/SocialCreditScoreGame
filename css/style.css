@@ -31,6 +31,11 @@ body {
     margin-top: 5vh;
 }
 
+.answer-pic {
+    width: 100%;
+    border: 18px ridge yellow;
+}
+
 .floattop {
     text-align: center;
     position: absolute;
