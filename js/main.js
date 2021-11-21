@@ -43,6 +43,7 @@ $.getJSON("data.json", function (d) {
     displayQuestion();
 });
 function displayQuestion() {
+    if(total < 200) sef("pullup");
     $("html, body").scrollTop(0);
     if (total < 1) {
         audio.pause();
