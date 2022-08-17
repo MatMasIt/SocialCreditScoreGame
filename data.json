@@ -57,23 +57,6 @@
             ]
         },
         {
-            "title": "How many children do you have?",
-            "answers": [
-                {
-                    "text": "One",
-                    "effect": 1200
-                },
-                {
-                    "text": "Many",
-                    "effect": -5000
-                },
-                {
-                    "text": "None",
-                    "effect": 10
-                }
-            ]
-        },
-        {
             "title": "What happened in Tienanmen square in 1989?",
             "answers": [
                 {
@@ -164,15 +147,19 @@
             ]
         },
         {
-            "title": "Can we build a nuclear power plant near your home?",
+            "title": "Would you like a multi-party system?",
             "answers": [
                 {
-                    "text": "No",
+                    "text": "Yes",
                     "effect": -7200
                 },
                 {
-                    "text": "Yes",
+                    "text": "No",
                     "effect": 5000
+                },
+                {
+                    "text": "Glory to the Chinese Communist Party",
+                    "effect": 9000
                 }
             ]
         },
