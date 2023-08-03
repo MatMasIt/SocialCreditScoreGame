@@ -177,7 +177,7 @@
             ]
         },
         {
-            "title": "Whitch country is the best?",
+            "title": "Which country is the best?",
             "answers": [
                 {
                     "text": "America",
@@ -240,23 +240,149 @@
             ]
         },
         {
-            "title": "Whitch country is the best?",
+            "title": "Do you like the internet in China?",
             "answers": [
                 {
-                    "text": "China",
+                    "text": "I use VPNS",
+                    "effect": -1000
+                },
+                {
+                    "text": "Yes",
+                    "effect": 2000
+                },
+                {
+                    "text": "Maybe",
+                    "effect": -1000
+                },
+                {
+                    "text": "I don't use it",
+                    "effect": 1
+                }
+            ]
+        },
+        {
+            "title": "What do you think about China's involvement in international affairs?",
+            "answers": [
+                {
+                    "text": "Positive change",
+                    "effect": 2500
+                },
+                {
+                    "text": "Self-interest and expansionism",
+                    "effect": -3000
+                },
+                {
+                    "text": "I don't know",
                     "effect": 1000
                 },
                 {
-                    "text": "China",
+                    "text": "Yes",
+                    "effect": 10
+                }
+            ]
+        },
+        {
+            "title": "How do you feel about China's cultural heritage and traditions?",
+            "answers": [
+                {
+                    "text": "Diversity must be preserved",
+                    "effect": -2000
+                },
+                {
+                    "text": "We should respect everyone",
+                    "effect": -1000
+                },
+                {
+                    "text": "I only want Han",
                     "effect": 1000
                 },
                 {
-                    "text": "China",
+                    "text": "Traditions?",
+                    "effect": 1000
+                }
+            ]
+        },
+        {
+            "title": "What was the effect of the one child policy",
+            "answers": [
+                {
+                    "text": "Good, the CCP is infallible",
+                    "effect": 2000
+                },
+                {
+                    "text": "Good",
                     "effect": 1000
                 },
                 {
-                    "text": "Not China",
-                    "effect": -5000
+                    "text": "I don't know",
+                    "effect": -1000
+                },
+                {
+                    "text": "Bad",
+                    "effect": -2000
+                }
+            ]
+        },
+        {
+            "title": "What do you think of the \"Great Firewall\"?",
+            "answers": [
+                {
+                    "text": "I love it",
+                    "effect": 2000
+                },
+                {
+                    "text": "It is necessary",
+                    "effect": 1000
+                },
+                {
+                    "text": "I don't like it",
+                    "effect": -1000
+                },
+                {
+                    "text": "I hate it",
+                    "effect": -2000
+                }
+            ]
+        },
+        {
+            "title": "What is censorship?",
+            "answers": [
+                {
+                    "text": "Censorship? All lies",
+                    "effect": 2000
+                },
+                {
+                    "text": "We need unity",
+                    "effect": 1000
+                },
+                {
+                    "text": "I believe in human rights",
+                    "effect": -1000
+                },
+                {
+                    "text": "What?",
+                    "effect": 2000
+                }
+            ]
+        },
+        {
+            "title": "Which of the following is your favourite?",
+            "answers": [
+                {
+                    "text": "Chairman Mao",
+                    "effect": 2000
+                },
+                {
+                    "text": "Deng Xiaoping",
+                    "effect": 1000
+                },
+                {
+                    "text": "Ronald Regan",
+                    "effect": -2000
+                },
+                {
+                    "text": "Zhao Ziyang",
+                    "effect": -2000
                 }
             ]
         }
