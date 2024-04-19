@@ -51,8 +51,8 @@ function displayQuestion() {
         $("#loose").show();
     }
     else {
-        
-        if(total < 2000) sef("pullup");
+
+        if (total < 2000) sef("pullup");
         var index = 0;
 
         // sends comrad Dwayne to help (or calls him back)
@@ -77,9 +77,11 @@ function displayQuestion() {
             indexesProgress++;
         }
         else {
-            shuffle(indexeslist);
-            indexesProgress = 0;
-            index = 0;
+            audio.pause();
+            sef("applause");
+            audio = new Audio('assets/music/march_vol_charged.mp3');
+            audio.play();
+            $("#win").show();
         }
         cQuestion = data["questions"][index];
         $("[data-ans=1]").html(data["questions"][index]["answers"][0]["text"]);
