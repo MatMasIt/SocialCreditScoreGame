@@ -208,3 +208,59 @@ questions:
         effect: -1000
       - text: "Wait a minute..."
         effect: -2000
+  - title: What is your opinion on China's Belt and Road Initiative?
+    answers:
+    - text: It's a great opportunity for global development
+      effect: 3000
+    - text: It's a form of debt-trap diplomacy
+      effect: -2000
+    - text: I'm not sure
+      effect: 1000
+  - title: How do you feel about China's military expansion in the South China Sea?
+    answers:
+      - text: It's necessary for national security
+        effect: 2000
+      - text: It's aggressive and destabilizing
+        effect: -3000
+      - text: I have no opinion
+        effect: 500
+  - title: Thoughts on China's social credit system?
+    answers:
+      - text: It's a great way to maintain social order
+        effect: 2000
+      - text: It's a violation of personal freedoms
+        effect: -3000
+      - text: I'm indifferent
+        effect: 500
+  - title: Do you believe in the concept of "One Country, Two Systems" for Hong Kong?
+    answers:
+      - text: Yes, it's a fair arrangement
+        effect: -1500
+      - text: No, Hong Kong should be fully integrated into China
+        effect: 2000
+      - text: I'm not familiar with it
+        effect: 1000
+  - title: What is your opinion on China's stance on human rights?
+    answers:
+      - text: China is improving its human rights record
+        effect: 2000
+      - text: China's human rights abuses are concerning
+        effect: -3000
+      - text: I don't know enough to comment
+        effect: 1000
+  - title: How do you feel about China's relationship with North Korea?
+    answers:
+    - text: It's a necessary strategic alliance
+      effect: 2000
+    - text: China should distance itself from North Korea
+      effect: -2500
+    - text: I'm not familiar with their relationship
+      effect: 1000
+  - title: What's your opinion on China's approach to technology and innovation?
+    answers:
+    - text: China is leading in technological advancement
+      effect: 2000
+    - text: China engages in intellectual property theft
+      effect: -3000
+    - text: I have no strong feelings about it
+      effect: 500

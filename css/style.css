@@ -56,8 +56,15 @@ body {
     margin-top: 10vh;
 }
 
-#counter {
+#scoreDisplay {
     font-size: 25px;
+}
+
+#progress {
+    font-size: 25px;
+    position: absolute;
+    top: 6px;
+    right: 10px;
 }
 
 .floatleft {

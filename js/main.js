@@ -38,10 +38,11 @@ $.ajax({
     complete: function (r) {
         data = jsyaml.load(r.responseText);
         total = data["initialScore"];
-        $("#counter").html("Social credit score: " + total);
+        $("#scoreDisplay").html("Social credit score: " + total);
         for (var i = 0; i < data["questions"].length; i++) {
             indexeslist.push(i);
         }
+        $("#progress").html("1 of " + indexeslist.length);
         shuffle(indexeslist);
         displayQuestion();
     }
@@ -132,9 +133,10 @@ $(".ans").mouseleave(function () {
 // ***8888888************************************8
 
 $(".ans").click(function () {
+    $("#progress").html(indexesProgress + 1 + " of " + indexeslist.length);
     var res = cQuestion["answers"][$(this).attr("data-ans") - 1]["effect"];
     total += res;
-    $("#counter").html("Social credit score: " + total);
+    $("#scoreDisplay").html("Social credit score: " + total);
     var d = Math.random();
     if (d < 0.10) {
         d = Math.random();
