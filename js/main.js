@@ -32,15 +32,19 @@ $("#playBegin").click(function () {
     $(this).fadeOut();
 });
 var data = {}, cQuestion = {}, indexeslist = [], indexesProgress = 0, total = 100;
-$.getJSON("data.json", function (d) {
-    data = d;
-    total = d["initialScore"];
-    $("#counter").html("Social credit score: " + total);
-    for (var i = 0; i < d["questions"].length; i++) {
-        indexeslist.push(i);
+$.ajax({
+    type: 'GET',
+    url: 'data.yaml',
+    complete: function (r) {
+        data = jsyaml.load(r.responseText);
+        total = data["initialScore"];
+        $("#counter").html("Social credit score: " + total);
+        for (var i = 0; i < data["questions"].length; i++) {
+            indexeslist.push(i);
+        }
+        shuffle(indexeslist);
+        displayQuestion();
     }
-    shuffle(indexeslist);
-    displayQuestion();
 });
 function displayQuestion() {
     $("html, body").scrollTop(0);
