@@ -182,3 +182,29 @@ questions:
         effect: -2000
       - text: Zhao Ziyang
         effect: -2000
+  - title: Who is the founder of the CCP
+    answers:
+      - text: Deng Xiaoping
+        effect: -500
+      - text: Chiang Kai-shek
+        effect: -1000
+      - text: Mao Zedong
+        effect: 2000
+      - text: Xi Jinping
+        effect: -300
+  - title: Have you ever heard of "Winnie The Pooh"
+    answers:
+      - text: "No"
+        effect: 1000
+      - text: I hate that western cartoon
+        effect: 2000
+      - text: Xi Jinping
+        effect: -2000
+  - title: Is June 4<sup>th</sup> an important day to you?
+    answers:
+      - text: "No"
+        effect: 2000
+      - text: Yes!
+        effect: -1000
+      - text: "Wait a minute..."
+        effect: -2000
