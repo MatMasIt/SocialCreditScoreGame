@@ -1,14 +1,25 @@
 initialScore: 10000
+title: Social Credit Score Test
+socialCreditScore: Social Credit Score
+of: of
+loose:
+  title: Your social credit score is too low
+  description: Your execution is scheduled tomorrow at sunset
+win:
+  title: Congratulations!
+  subtitle: Your social credit score is high enough
+  description: You are worthy of the Chinese Dream
+playAgain: Play again
 questions:
   - title: 'Who''s the best (and sexiest) president ever:'
     answers:
-      - text: <img class='answers-pic' src='assets/img/p0.jpeg'>
+      - text: <img class='answers-pic' src='../assets/img/p0.jpeg'>
         effect: 2000
-      - text: <img class='answers-pic' src='assets/img/p2.jpeg'>
+      - text: <img class='answers-pic' src='../assets/img/p2.jpeg'>
         effect: -9999
-      - text: <img class='answers-pic' src='assets/img/p3.jpeg'>
+      - text: <img class='answers-pic' src='../assets/img/p3.jpeg'>
         effect: -9999
-      - text: <img class='answers-pic' src='assets/img/p5.jpeg'>
+      - text: <img class='answers-pic' src='../assets/img/p5.jpeg'>
         effect: -9999
   - title: Is Taiwan a country
     answers:

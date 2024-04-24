@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Social Credit Score Game</title>
+    <meta name="description" content="Is your social credit score high enough?">
+    <meta name="author" content="Mattia Mascarello">
+
+    <meta property="og:title" content="The Social Credit Score Game">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+    <meta property="og:description" content="Is your social credit score high enough?">
+    <meta property="og:image" content="assets/img/chinese_flag.png">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="scoreDisplay"></div>
+        <div id="progress"></div>
+        <div id="question">
+            <h1 id="questionTitle">Question</h1>
+            <div class="grid">
+                <div class="row">
+                    <a class="button ans" data-ans="1">a</a>
+                    <a class="button ans" data-ans="2">b</a>
+                </div>
+                <div class="row">
+                    <a class="button ans" data-ans="3">c</a>
+                    <a class="button ans" data-ans="4">d</a>
+                </div>
+            </div>
+        </div>        
+        <div id="playBegin" class="floattop">
+            <h1 id="gameTitle"></h1>
+            <img src="../assets/img/play.png">
+        </div>
+        <div id="rock-approves" class="floatleft">
+            <video id="rock-approves-video" style="width: 100%;" muted class="fadeOutVideo">
+                <source src="../assets/video/aprovar.mp4" type="video/mp4">
+            </video>                 
+        </div>
+        <div id="rock-disapproves" class="floatleft">
+            <video id="rock-disapproves-video" style="width: 100%;">
+                <source src="../assets/video/desaprovar.mp4" type="video/mp4">
+            </video>                 
+        </div>        
+        <div id="bbchacha" class="floatright">
+            <img src="../assets/img/bbchacha.gif">
+        </div>
+        <div id="wrong" class="floattop">
+            <img src="../assets/img/wrong.png">
+        </div>
+        <div id="correct" class="floattop">
+            <img src="../assets/img/correct.png">
+        </div>
+        <div id="mao" class="floattop">
+            <img src="../assets/img/mao.jpg">
+        </div>
+        <div id="xi" class="floattop">
+            <img src="../assets/img/xi.jpg">
+        </div>
+        <div id="square" class="floattop">
+            <img src="../assets/img/square.jpg">
+        </div>
+        <div id="loose" class="floattop">
+            <h1 id="looseTitle"></h1>
+            <p id="looseDescription"></p>
+            <a href="javascript:location.reload()"class="playAgain"></a>
+        </div>
+        <div id="win" class="floattop">
+            <h1 id="winTitle"></h1>
+            <p id="winSubtitle"></p>
+            <p id="winDescription"></p>
+            <a href="javascript:location.reload()" class="playAgain"></a>
+        </div>
+    </div>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/js-yaml.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

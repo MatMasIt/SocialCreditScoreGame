@@ -1,5 +1,5 @@
 body {
-    background-image: url(..//assets/img/chinese_flag.png);
+    background-image: url(../img/chinese_flag.png);
 }
 
 * {
@@ -48,7 +48,7 @@ body {
 }
 
 #playBegin {
-    background-image: url(..//assets/img/chinese_flag.png);
+    background-image: url(../img/chinese_flag.png);
 }
 
 .floattop>img {

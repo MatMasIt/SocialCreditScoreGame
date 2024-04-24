@@ -10,11 +10,11 @@ else {
 //handles bgm files to create a continous bgm
 function audiosegm() {
     if (audiostate != "mix") {
-        audio = new Audio('assets/music/main.mp3');
+        audio = new Audio('../assets/music/main.mp3');
         audiostate = "mix";
     }
     else {
-        audio = new Audio('assets/music/maobgm.mp3');
+        audio = new Audio('../assets/music/maobgm.mp3');
         audiostate = "maobgm";
     }
     audio.play();
@@ -22,7 +22,7 @@ function audiosegm() {
 }
 // plays a sound effect
 function sef(filename) {
-    new Audio("assets/music/" + filename + ".mp3").play();
+    new Audio("../assets/music/" + filename + ".mp3").play();
 }
 $("#playBegin").click(function () {
     try {// this might fail, expecially on safari
@@ -32,17 +32,31 @@ $("#playBegin").click(function () {
     $(this).fadeOut();
 });
 var data = {}, cQuestion = {}, indexeslist = [], indexesProgress = 0, total = 100;
+var file = "data_en.yaml";
+switch(getParam("lang")) {
+    case "it":
+        file = "data_it.yaml";
+        break;
+}
 $.ajax({
     type: 'GET',
-    url: 'data.yaml',
+    url: "../"+file,
     complete: function (r) {
         data = jsyaml.load(r.responseText);
         total = data["initialScore"];
-        $("#scoreDisplay").html("Social credit score: " + total);
+        document.title = data["title"];
+        $("#gameTitle").html(data["title"]);
+        $(".playAgain").html(data["playAgain"]);
+        $("#looseTitle").html(data["loose"]["title"]);
+        $("#looseDescription").html(data["loose"]["description"]);
+        $("#winTitle").html(data["win"]["title"]);
+        $("#winSubtitle").html(data["win"]["subtitle"]);
+        $("#winDescription").html(data["win"]["description"]);
+        $("#scoreDisplay").html(data["socialCreditScore"]+": " + total);
         for (var i = 0; i < data["questions"].length; i++) {
             indexeslist.push(i);
         }
-        $("#progress").html("1 of " + indexeslist.length);
+        $("#progress").html("1 "+data["of"]+" " + indexeslist.length);
         shuffle(indexeslist);
         displayQuestion();
     }
@@ -51,7 +65,7 @@ function displayQuestion() {
     $("html, body").scrollTop(0);
     if (total < 1) {
         audio.pause();
-        audio = new Audio('assets/music/anthem.mp3');
+        audio = new Audio('../assets/music/anthem.mp3');
         audio.play();
         $("#loose").show();
     }
@@ -84,7 +98,7 @@ function displayQuestion() {
         else {
             audio.pause();
             sef("applause");
-            audio = new Audio('assets/music/march_vol_charged.mp3');
+            audio = new Audio('../assets/music/march_vol_charged.mp3');
             audio.play();
             $("#win").show();
         }
@@ -133,10 +147,10 @@ $(".ans").mouseleave(function () {
 // ***8888888************************************8
 
 $(".ans").click(function () {
-    $("#progress").html(indexesProgress + 1 + " of " + indexeslist.length);
+    $("#progress").html(indexesProgress + 1 + " " + data["of"] + " " + indexeslist.length);
     var res = cQuestion["answers"][$(this).attr("data-ans") - 1]["effect"];
     total += res;
-    $("#scoreDisplay").html("Social credit score: " + total);
+    $("#scoreDisplay").html(data["socialCreditScore"] + ": " + total);
     var d = Math.random();
     if (d < 0.10) {
         d = Math.random();

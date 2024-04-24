@@ -1,0 +1,277 @@
+initialScore: 10000
+title: Test del Punteggio di Credito Sociale
+socialCreditScore: Punteggio di Credito Sociale
+of: di
+loose:
+  title: Il tuo punteggio di credito sociale è troppo basso
+  description: La tua esecuzione è programmata per domani al tramonto
+win:
+  title: Congratulazioni!
+  subtitle: Il tuo punteggio di credito sociale è abbastanza alto
+  description: Sei degno di essere un cittadino cinese
+playAgain: Gioca di nuovo
+questions:
+  - title: 'Chi è il miglior (e più sexy) presidente di sempre:'
+    answers:
+      - text: <img class='answers-pic' src='../assets/img/p0.jpeg'>
+        effect: 2000
+      - text: <img class='answers-pic' src='../assets/img/p2.jpeg'>
+        effect: -9999
+      - text: <img class='answers-pic' src='../assets/img/p3.jpeg'>
+        effect: -9999
+      - text: <img class='answers-pic' src='../assets/img/p5.jpeg'>
+        effect: -9999
+  - title: Taiwan è uno stato?
+    answers:
+      - text: 'Sì'
+        effect: -1001
+      - text: 'No'
+        effect: 700
+      - text: Che cos'è Taiwan?
+        effect: 3000
+  - title: Quante partiti sono ammessi in Cina?
+    answers:
+      - text: Uno
+        effect: 1200
+      - text: Molti
+        effect: -5000
+      - text: Solo il partito comunista
+        effect: 7000
+  - title: Cosa è successo in piazza Tienanmen nel 1989?
+    answers:
+      - text: Nulla
+        effect: 1200
+      - text: Qualcosa
+        effect: -5000
+      - text: Che cos'è piazza Tienanmen?
+        effect: 1000
+  - title: Usi i social media occidentali?
+    answers:
+      - text: 'No'
+        effect: 1200
+      - text: 'Sì'
+        effect: -5000
+  - title: Tieni degli Uiguri nascosti a casa tua?
+    answers:
+      - text: 'No'
+        effect: 1200
+      - text: 'Sì'
+        effect: -5000
+  - title: Hai viaggiato recentemente all'estero?
+    answers:
+      - text: 'No'
+        effect: 1200
+      - text: 'Sì'
+        effect: -5000
+      - text: Per espandere l'influenza della Cina
+        effect: 1400
+  - title: Pensi che dovremmo rispettare l'ambiente?
+    answers:
+      - text: 'No'
+        effect: 1200
+      - text: 'Sì'
+        effect: -5000
+      - text: Voglio nuovamente espandere l'influenza della Cina
+        effect: 600
+  - title: Supporti l'indipendenza di Hong Kong?
+    answers:
+      - text: 'No'
+        effect: 1200
+      - text: 'Sì'
+        effect: -5000
+  - title: Ti piacerebbe un sistema multipartitico?
+    answers:
+      - text: 'Sì'
+        effect: -7200
+      - text: 'No'
+        effect: 5000
+      - text: Gloria al Partito Comunista Cinese
+        effect: 9000
+  - title: Tuo padre sta andando in un campo di rieducazione
+    answers:
+      - text: No!
+        effect: -7200
+      - text: Sì!
+        effect: 5000
+  - title: Quale paese è il migliore?
+    answers:
+      - text: America
+        effect: -1000
+      - text: Non la Cina
+        effect: -6969
+      - text: Cina
+        effect: 3000
+      - text: Taiwan
+        effect: -5000
+  - title: Quante ore di videogiochi giochi al giorno?
+    answers:
+      - text: '1'
+        effect: 1000
+      - text: Cosa sono i videogiochi?
+        effect: 609
+      - text: '3'
+        effect: 500
+      - text: più di 3 ore
+        effect: -1000
+  - title: Pensieri sul comunismo?
+    answers:
+      - text: Lo odio
+        effect: -2000
+      - text: Lo amo
+        effect: -609
+      - text: Noi lo amiamo
+        effect: 1500
+      - text: Che cos'è il comunismo?
+        effect: -10
+  - title: Ti piace internet in Cina?
+    answers:
+      - text: Uso VPN
+        effect: -1000
+      - text: 'Sì'
+        effect: 2000
+      - text: Forse
+        effect: -1000
+      - text: Non lo uso
+        effect: 1
+  - title: Cosa pensi del coinvolgimento della Cina negli affari internazionali?
+    answers:
+      - text: Influenza positiva
+        effect: 2500
+      - text: Controllo ed espansionismo
+        effect: -3000
+      - text: Non lo so
+        effect: 1000
+      - text: 'Sì'
+        effect: 10
+  - title: Come ti senti riguardo al patrimonio culturale e alle tradizioni della Cina?
+    answers:
+      - text: La diversità deve essere preservata
+        effect: -2000
+      - text: Dovremmo rispettare tutti
+        effect: -1000
+      - text: Voglio solo l'etnia Han
+        effect: 1000
+      - text: Tradizioni?
+        effect: 1000
+  - title: Qual è stato l'effetto della politica del figlio unico?
+    answers:
+      - text: Buono, il PCC è infallibile
+        effect: 2000
+      - text: Buono
+        effect: 1000
+      - text: Non lo so
+        effect: -1000
+      - text: Male
+        effect: -2000
+  - title: Cosa pensi del "Grande Firewall"?
+    answers:
+      - text: Lo adoro
+        effect: 2000
+      - text: È necessario
+        effect: 1000
+      - text: Non mi piace
+        effect: -1000
+      - text: Lo odio
+        effect: -2000
+  - title: Cos'è la censura?
+    answers:
+      - text: Censura? Tutte bugie
+        effect: 2000
+      - text: Abbiamo bisogno di unità
+        effect: 1000
+      - text: Credo nei diritti umani
+        effect: -1000
+      - text: Che cosa?
+        effect: 2000
+  - title: Qual è il tuo preferito tra i seguenti?
+    answers:
+      - text: Il Presidente Mao
+        effect: 2000
+      - text: Deng Xiaoping
+        effect: 1000
+      - text: Ronald Regan
+        effect: -2000
+      - text: Zhao Ziyang
+        effect: -2000
+  - title: Chi è stato il fondatore del PCC?
+    answers:
+      - text: Deng Xiaoping
+        effect: -500
+      - text: Chiang Kai-shek
+        effect: -1000
+      - text: Mao Zedong
+        effect: 2000
+      - text: Xi Jinping
+        effect: -300
+  - title: Hai mai sentito parlare di "Winnie The Pooh"?
+    answers:
+      - text: "No"
+        effect: 1000
+      - text: Odio quel cartone animato occidentale
+        effect: 2000
+      - text: Xi Jinping
+        effect: -2000
+  - title: Il 4 giugno è un giorno importante per te?
+    answers:
+      - text: "No"
+        effect: 2000
+      - text: Sì!
+        effect: -1000
+      - text: "Aspetta un attimo..."
+        effect: -2000
+  - title: Qual è la tua opinione sull'iniziativa Belt and Road della Cina?
+    answers:
+      - text: È una grande opportunità per lo sviluppo globale
+        effect: 3000
+      - text: È una forma di diplomazia che intrappola col debito
+        effect: -2000
+      - text: Non ne sono sicuro
+        effect: 1000
+  - title: Come ti senti riguardo all'espansione militare della Cina nel Mar Cinese Meridionale?
+    answers:
+      - text: È necessaria per la sicurezza nazionale
+        effect: 2000
+      - text: È aggressiva e destabilizzante
+        effect: -3000
+      - text: Non ho opinioni
+        effect: 500
+  - title: Pensieri sul sistema di credito sociale della Cina?
+    answers:
+      - text: È un ottimo modo per mantenere l'ordine sociale
+        effect: 2000
+      - text: È una violazione delle libertà personali
+        effect: -3000
+      - text: Sono indifferente
+        effect: 500
+  - title: Credi nel concetto di "Un Paese, Due Sistemi" per Hong Kong?
+    answers:
+      - text: Sì, è un accordo equo
+        effect: -1500
+      - text: No, Hong Kong dovrebbe essere completamente integrata nella Cina
+        effect: 2000
+      - text: Non ne sono familiare
+        effect: 1000
+  - title: Qual è la tua opinione sulla posizione della Cina sui diritti umani?
+    answers:
+      - text: La Cina sta migliorando il suo status sui diritti umani
+        effect: 2000
+      - text: Gli abusi dei diritti umani della Cina sono preoccupanti
+        effect: -3000
+      - text: Non so abbastanza per commentare
+        effect: 1000
+  - title: Come ti senti riguardo alle relazioni della Cina con la Corea del Nord?
+    answers:
+      - text: È un'alleanza strategica necessaria
+        effect: 2000
+      - text: La Cina dovrebbe prendere le distanze dalla Corea del Nord
+        effect: -2500
+      - text: Non sono familiare con la loro relazione
+        effect: 1000
+  - title: Qual è la tua opinione sull'approccio della Cina alla tecnologia e all'innovazione?
+    answers:
+    - text: La Cina sta guidando nell'avanzamento tecnologico
+      effect: 2000
+    - text: La Cina si dedica al furto di proprietà intellettuale
+      effect: -3000
+    - text: Non ho sentimenti forti a riguardo
+      effect: 500
